@@ -23,7 +23,7 @@ def dbConnect():
 def readingFile(cur, conn):
     filename = input('Enter the File Name: ')
     if len(filename) < 1:
-        filename = '../../Files/mbox1.txt'
+        filename = 'mbox1.txt'
     fHandle = open(filename)
     for line in fHandle:
         if not line.startswith('From') or line.startswith('From:'):
